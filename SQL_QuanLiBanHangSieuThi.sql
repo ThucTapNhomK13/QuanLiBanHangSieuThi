@@ -1,7 +1,7 @@
 create database QuanLiBanHangSieuThi
-
+go
 use QuanLiBanHangSieuThi
-
+go
 create table NhanVien
 (
 manhanvien varchar(10) primary key,
