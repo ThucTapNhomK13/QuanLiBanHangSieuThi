@@ -1,0 +1,10 @@
+C:\Users\Gon\documents\visual studio 2015\Projects\QuanLiBanHangSIeuThi\DTO-Model\bin\Debug\DTO-Model.dll
+C:\Users\Gon\documents\visual studio 2015\Projects\QuanLiBanHangSIeuThi\DTO-Model\bin\Debug\DTO-Model.pdb
+C:\Users\Gon\documents\visual studio 2015\Projects\QuanLiBanHangSIeuThi\DTO-Model\obj\Debug\DTO-Model.dll
+C:\Users\Gon\documents\visual studio 2015\Projects\QuanLiBanHangSIeuThi\DTO-Model\obj\Debug\DTO-Model.pdb
+C:\Users\Gon\documents\visual studio 2015\Projects\QuanLiBanHangSIeuThi\DTO-Model\obj\Debug\DTO-Model.csprojResolveAssemblyReference.cache
+E:\C#\Projects\QuanLiBanHangSIeuThi\DTO-Model\bin\Debug\DTO-Model.dll
+E:\C#\Projects\QuanLiBanHangSIeuThi\DTO-Model\bin\Debug\DTO-Model.pdb
+E:\C#\Projects\QuanLiBanHangSIeuThi\DTO-Model\obj\Debug\DTO-Model.csprojResolveAssemblyReference.cache
+E:\C#\Projects\QuanLiBanHangSIeuThi\DTO-Model\obj\Debug\DTO-Model.dll
+E:\C#\Projects\QuanLiBanHangSIeuThi\DTO-Model\obj\Debug\DTO-Model.pdb
