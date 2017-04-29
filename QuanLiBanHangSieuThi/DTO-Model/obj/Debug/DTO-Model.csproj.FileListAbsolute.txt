@@ -13,3 +13,7 @@ C:\Users\MienAnh\Downloads\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\b
 C:\Users\MienAnh\Downloads\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\obj\Debug\DTO-Model.csprojResolveAssemblyReference.cache
 C:\Users\MienAnh\Downloads\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\obj\Debug\DTO-Model.dll
 C:\Users\MienAnh\Downloads\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\obj\Debug\DTO-Model.pdb
+C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\bin\Debug\DTO-Model.dll
+C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\bin\Debug\DTO-Model.pdb
+C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\obj\Debug\DTO-Model.dll
+C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\DTO-Model\obj\Debug\DTO-Model.pdb

@@ -284,6 +284,7 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(17, 328);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(801, 206);
             this.dataGridView.TabIndex = 5;
             this.dataGridView.Click += new System.EventHandler(this.dataGridView_Click);
@@ -335,9 +336,9 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(26, 299);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(129, 15);
+            this.label14.Size = new System.Drawing.Size(120, 15);
             this.label14.TabIndex = 77;
-            this.label14.Text = "Danh sách khách hàng";
+            this.label14.Text = "Danh sách nhân viên";
             // 
             // groupBox1
             // 
