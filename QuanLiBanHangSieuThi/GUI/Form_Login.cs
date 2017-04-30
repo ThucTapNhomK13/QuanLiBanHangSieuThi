@@ -38,11 +38,11 @@ namespace GUI
             }
             if(test)
             {
+                this.Hide();
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK);
                 Form_Main main = new Form_Main();
-                main.Show();
-                Form_Login login = new Form_Login();
-                login.Close();
+                main.ShowDialog();
+                this.Show();
             }              
             else
             {

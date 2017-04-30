@@ -19,32 +19,42 @@ namespace GUI
 
         private void đăngNhậpToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form_Login lg = new Form_Login();
-            lg.Show();
+            lg.ShowDialog();
+            this.Show();
         }
 
         private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form_NhanVien nv = new Form_NhanVien();
-            nv.Show();
+            nv.ShowDialog();
+            this.Show();
         }
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form_KhachHang kh = new Form_KhachHang();
-            kh.Show();
+            kh.ShowDialog();
+            this.Show();
         }
 
         private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form_NhaCungCap ncc = new Form_NhaCungCap();
-            ncc.Show();
+            ncc.ShowDialog();
+            this.Show();
         }
 
         private void hàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form_MatHang mh = new Form_MatHang();
-            mh.Show();
+            mh.ShowDialog();
+            this.Show();
         }
 
         private void tìmKiếmNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,8 +65,10 @@ namespace GUI
 
         private void tìmKiếmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form_TImKiem_KhachHang kh = new Form_TImKiem_KhachHang();
-            kh.Show();
+            kh.ShowDialog();
+            this.Show();
         }
     }
 }

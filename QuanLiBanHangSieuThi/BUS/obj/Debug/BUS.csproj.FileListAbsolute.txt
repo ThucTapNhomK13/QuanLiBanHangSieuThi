@@ -34,3 +34,12 @@ C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\
 C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\obj\Debug\BUS.dll
 C:\Users\MienAnh\Documents\GitHub\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\obj\Debug\BUS.pdb
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\bin\Debug\BUS.dll
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\bin\Debug\BUS.pdb
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\bin\Debug\DAO.dll
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\bin\Debug\DTO-Model.dll
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\bin\Debug\DAO.pdb
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\bin\Debug\DTO-Model.pdb
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\obj\Debug\BUS.dll
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLiBanHangSieuThi\QuanLiBanHangSieuThi\BUS\obj\Debug\BUS.pdb

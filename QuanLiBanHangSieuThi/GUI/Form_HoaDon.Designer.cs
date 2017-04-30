@@ -117,14 +117,14 @@
             this.cmbList.Location = new System.Drawing.Point(107, 144);
             this.cmbList.Name = "cmbList";
             this.cmbList.Size = new System.Drawing.Size(200, 21);
-            this.cmbList.TabIndex = 6;
+            this.cmbList.TabIndex = 5;
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(543, 142);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(104, 23);
-            this.button3.TabIndex = 4;
+            this.button3.TabIndex = 7;
             this.button3.Text = "Thêm";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -140,7 +140,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(26, 184);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(618, 153);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.TabIndex = 8;
             // 
             // stt
             // 
@@ -175,7 +175,7 @@
             this.txtSum.Location = new System.Drawing.Point(448, 356);
             this.txtSum.Name = "txtSum";
             this.txtSum.Size = new System.Drawing.Size(199, 20);
-            this.txtSum.TabIndex = 0;
+            this.txtSum.TabIndex = 9;
             // 
             // label6
             // 
@@ -191,7 +191,7 @@
             this.dtpDateOfPrint.Location = new System.Drawing.Point(107, 85);
             this.dtpDateOfPrint.Name = "dtpDateOfPrint";
             this.dtpDateOfPrint.Size = new System.Drawing.Size(200, 20);
-            this.dtpDateOfPrint.TabIndex = 4;
+            this.dtpDateOfPrint.TabIndex = 3;
             // 
             // label7
             // 
@@ -216,7 +216,7 @@
             this.txtSafe.Location = new System.Drawing.Point(448, 84);
             this.txtSafe.Name = "txtSafe";
             this.txtSafe.Size = new System.Drawing.Size(199, 20);
-            this.txtSafe.TabIndex = 0;
+            this.txtSafe.TabIndex = 4;
             // 
             // label5
             // 
@@ -232,7 +232,7 @@
             this.txtCodeStaff.Location = new System.Drawing.Point(326, 40);
             this.txtCodeStaff.Name = "txtCodeStaff";
             this.txtCodeStaff.Size = new System.Drawing.Size(100, 20);
-            this.txtCodeStaff.TabIndex = 0;
+            this.txtCodeStaff.TabIndex = 1;
             // 
             // label3
             // 
@@ -248,7 +248,7 @@
             this.txtCodeMember.Location = new System.Drawing.Point(547, 40);
             this.txtCodeMember.Name = "txtCodeMember";
             this.txtCodeMember.Size = new System.Drawing.Size(100, 20);
-            this.txtCodeMember.TabIndex = 0;
+            this.txtCodeMember.TabIndex = 2;
             // 
             // label2
             // 
@@ -264,7 +264,7 @@
             this.txtCount.Location = new System.Drawing.Point(407, 142);
             this.txtCount.Name = "txtCount";
             this.txtCount.Size = new System.Drawing.Size(100, 20);
-            this.txtCount.TabIndex = 0;
+            this.txtCount.TabIndex = 6;
             // 
             // label8
             // 
@@ -280,7 +280,7 @@
             this.button1.Location = new System.Drawing.Point(501, 460);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 23);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Tạo hóa đơn";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -290,7 +290,7 @@
             this.button2.Location = new System.Drawing.Point(622, 460);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 1;
             this.button2.Text = "In hóa đơn";
             this.button2.UseVisualStyleBackColor = true;
             // 

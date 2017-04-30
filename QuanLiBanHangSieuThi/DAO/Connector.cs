@@ -10,7 +10,9 @@ namespace DAO
 {
     public class Connector
     {
-        public string strConn = @"Data Source=MYPC\SQLEXPRESS;Initial Catalog=QuanLiBanHangSieuThi;Integrated Security=True";
+        public string strConn = @"Data Source=MRKCUONG\MKCUONG;Initial Catalog=QuanLiBanHangSieuThi;Integrated Security=True";
+
+        private string HungCuong = @"Data Source=MRKCUONG\MKCUONG;Initial Catalog=QuanLiBanHangSieuThi;Integrated Security=True";
 
         private SqlCommand cmd;
         private SqlConnection conn;

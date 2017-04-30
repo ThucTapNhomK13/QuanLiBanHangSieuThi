@@ -44,6 +44,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.clMaMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clLoaiHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -178,6 +184,13 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clMaMH,
+            this.clTenMH,
+            this.clSoLuong,
+            this.clLoaiHang,
+            this.clGia,
+            this.clNCC});
             this.dataGridView1.Location = new System.Drawing.Point(23, 212);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(762, 150);
@@ -192,6 +205,42 @@
             this.button2.Text = "Thêm";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // clMaMH
+            // 
+            this.clMaMH.DataPropertyName = "mamathang";
+            this.clMaMH.HeaderText = "Mã MH";
+            this.clMaMH.Name = "clMaMH";
+            // 
+            // clTenMH
+            // 
+            this.clTenMH.DataPropertyName = "tenmathang";
+            this.clTenMH.HeaderText = "Tên mặt hàng";
+            this.clTenMH.Name = "clTenMH";
+            // 
+            // clSoLuong
+            // 
+            this.clSoLuong.DataPropertyName = "soluongcon";
+            this.clSoLuong.HeaderText = "Số lượng";
+            this.clSoLuong.Name = "clSoLuong";
+            // 
+            // clLoaiHang
+            // 
+            this.clLoaiHang.DataPropertyName = "loaihang";
+            this.clLoaiHang.HeaderText = "Loại hàng";
+            this.clLoaiHang.Name = "clLoaiHang";
+            // 
+            // clGia
+            // 
+            this.clGia.DataPropertyName = "gia";
+            this.clGia.HeaderText = "Giá";
+            this.clGia.Name = "clGia";
+            // 
+            // clNCC
+            // 
+            this.clNCC.DataPropertyName = "nhaccma";
+            this.clNCC.HeaderText = "Mã NCC";
+            this.clNCC.Name = "clNCC";
             // 
             // Form_MatHang
             // 
@@ -231,5 +280,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clMaMH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTenMH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clSoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clLoaiHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNCC;
     }
 }

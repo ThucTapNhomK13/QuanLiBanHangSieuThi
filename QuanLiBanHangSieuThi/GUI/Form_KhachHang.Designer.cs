@@ -53,6 +53,13 @@
             this.txtTel = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.clMaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clCmtnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +70,7 @@
             this.dtpDateOfbird.Location = new System.Drawing.Point(438, 33);
             this.dtpDateOfbird.Name = "dtpDateOfbird";
             this.dtpDateOfbird.Size = new System.Drawing.Size(200, 20);
-            this.dtpDateOfbird.TabIndex = 70;
+            this.dtpDateOfbird.TabIndex = 1;
             // 
             // rdbFeMale
             // 
@@ -72,7 +79,7 @@
             this.rdbFeMale.Location = new System.Drawing.Point(512, 70);
             this.rdbFeMale.Name = "rdbFeMale";
             this.rdbFeMale.Size = new System.Drawing.Size(41, 19);
-            this.rdbFeMale.TabIndex = 69;
+            this.rdbFeMale.TabIndex = 4;
             this.rdbFeMale.TabStop = true;
             this.rdbFeMale.Text = "Nữ";
             this.rdbFeMale.UseVisualStyleBackColor = true;
@@ -84,7 +91,7 @@
             this.rdbMale.Location = new System.Drawing.Point(438, 70);
             this.rdbMale.Name = "rdbMale";
             this.rdbMale.Size = new System.Drawing.Size(50, 19);
-            this.rdbMale.TabIndex = 68;
+            this.rdbMale.TabIndex = 3;
             this.rdbMale.TabStop = true;
             this.rdbMale.Text = "Nam";
             this.rdbMale.UseVisualStyleBackColor = true;
@@ -168,30 +175,38 @@
             this.txtCode.Location = new System.Drawing.Point(175, 70);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(138, 20);
-            this.txtCode.TabIndex = 58;
+            this.txtCode.TabIndex = 2;
             // 
             // txtPeopleId
             // 
             this.txtPeopleId.Location = new System.Drawing.Point(175, 104);
             this.txtPeopleId.Name = "txtPeopleId";
             this.txtPeopleId.Size = new System.Drawing.Size(138, 20);
-            this.txtPeopleId.TabIndex = 57;
+            this.txtPeopleId.TabIndex = 5;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(175, 33);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(138, 20);
-            this.txtName.TabIndex = 56;
+            this.txtName.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clMaKH,
+            this.clTen,
+            this.clNgaySinh,
+            this.clGioiTinh,
+            this.clCmtnd,
+            this.clDiaChi,
+            this.clSDT});
             this.dataGridView1.Location = new System.Drawing.Point(21, 274);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(664, 172);
-            this.dataGridView1.TabIndex = 55;
+            this.dataGridView1.TabIndex = 4;
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // btnDelete
@@ -199,7 +214,7 @@
             this.btnDelete.Location = new System.Drawing.Point(598, 206);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(87, 27);
-            this.btnDelete.TabIndex = 71;
+            this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -209,7 +224,7 @@
             this.btnModify.Location = new System.Drawing.Point(483, 206);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(87, 27);
-            this.btnModify.TabIndex = 72;
+            this.btnModify.TabIndex = 2;
             this.btnModify.Text = "Sửa";
             this.btnModify.UseVisualStyleBackColor = true;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
@@ -219,7 +234,7 @@
             this.btnPrint.Location = new System.Drawing.Point(257, 206);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(87, 27);
-            this.btnPrint.TabIndex = 73;
+            this.btnPrint.TabIndex = 0;
             this.btnPrint.Text = "Thêm";
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
@@ -229,7 +244,7 @@
             this.btnSave.Location = new System.Drawing.Point(369, 206);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(87, 27);
-            this.btnSave.TabIndex = 74;
+            this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -259,14 +274,14 @@
             this.txtAddress.Location = new System.Drawing.Point(436, 104);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(202, 20);
-            this.txtAddress.TabIndex = 58;
+            this.txtAddress.TabIndex = 6;
             // 
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(436, 134);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(202, 20);
-            this.txtTel.TabIndex = 58;
+            this.txtTel.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -303,6 +318,50 @@
             this.label11.Size = new System.Drawing.Size(119, 13);
             this.label11.TabIndex = 76;
             this.label11.Text = "Danh sách khách hàng";
+            // 
+            // clMaKH
+            // 
+            this.clMaKH.DataPropertyName = "makhachhang";
+            this.clMaKH.HeaderText = "Mã";
+            this.clMaKH.Name = "clMaKH";
+            // 
+            // clTen
+            // 
+            this.clTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clTen.DataPropertyName = "tenkhachhang";
+            this.clTen.HeaderText = "Tên khách hàng";
+            this.clTen.Name = "clTen";
+            // 
+            // clNgaySinh
+            // 
+            this.clNgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clNgaySinh.DataPropertyName = "ngaysinh";
+            this.clNgaySinh.HeaderText = "Ngày sinh";
+            this.clNgaySinh.Name = "clNgaySinh";
+            // 
+            // clGioiTinh
+            // 
+            this.clGioiTinh.DataPropertyName = "gioitinh";
+            this.clGioiTinh.HeaderText = "Giới tính";
+            this.clGioiTinh.Name = "clGioiTinh";
+            // 
+            // clCmtnd
+            // 
+            this.clCmtnd.DataPropertyName = "cmtnd";
+            this.clCmtnd.HeaderText = "Cmtnd";
+            this.clCmtnd.Name = "clCmtnd";
+            // 
+            // clDiaChi
+            // 
+            this.clDiaChi.DataPropertyName = "diachi";
+            this.clDiaChi.HeaderText = "Địa chỉ";
+            this.clDiaChi.Name = "clDiaChi";
+            // 
+            // clSDT
+            // 
+            this.clSDT.DataPropertyName = "sdt";
+            this.clSDT.HeaderText = "SDT";
+            this.clSDT.Name = "clSDT";
             // 
             // Form_KhachHang
             // 
@@ -355,5 +414,12 @@
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clMaKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clCmtnd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clSDT;
     }
 }
