@@ -57,6 +57,22 @@ namespace DAO
             }
         }
 
+        public DataTable searchData (string table, string query)
+        {
+            try
+            {
+                string sql = "select * from " + table + " where " + query;
+                com = new SqlDataAdapter(sql, strConn);
+                tbl = new DataTable();
+                com.Fill(tbl);
+            }
+            catch(Exception)
+            {
+                return null;
+            }
+            return tbl;
+        }
+
         public DataTable getDataTable(string table)
         {
             try

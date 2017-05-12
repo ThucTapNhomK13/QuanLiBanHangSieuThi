@@ -40,15 +40,15 @@
             this.txtCount = new System.Windows.Forms.TextBox();
             this.txtCodeBIll = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.clMa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clTenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clMaMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -167,6 +167,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(702, 150);
             this.dataGridView1.TabIndex = 3;
             // 
+            // clMa
+            // 
+            this.clMa.DataPropertyName = "manhacc";
+            this.clMa.HeaderText = "Ma NCC";
+            this.clMa.Name = "clMa";
+            // 
+            // clTenNCC
+            // 
+            this.clTenNCC.DataPropertyName = "tennhacc";
+            this.clTenNCC.HeaderText = "Tên NCC";
+            this.clTenNCC.Name = "clTenNCC";
+            // 
+            // clMaMH
+            // 
+            this.clMaMH.DataPropertyName = "mathangma";
+            this.clMaMH.HeaderText = "Mã MH";
+            this.clMaMH.Name = "clMaMH";
+            // 
+            // clGia
+            // 
+            this.clGia.DataPropertyName = "giamathang";
+            this.clGia.HeaderText = "Giá";
+            this.clGia.Name = "clGia";
+            // 
+            // clSoLuong
+            // 
+            this.clSoLuong.DataPropertyName = "soluong";
+            this.clSoLuong.HeaderText = "Số lượng";
+            this.clSoLuong.Name = "clSoLuong";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -206,36 +236,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // clMa
-            // 
-            this.clMa.DataPropertyName = "manhacc";
-            this.clMa.HeaderText = "Ma NCC";
-            this.clMa.Name = "clMa";
-            // 
-            // clTenNCC
-            // 
-            this.clTenNCC.DataPropertyName = "tennhacc";
-            this.clTenNCC.HeaderText = "Tên NCC";
-            this.clTenNCC.Name = "clTenNCC";
-            // 
-            // clMaMH
-            // 
-            this.clMaMH.DataPropertyName = "mathangma";
-            this.clMaMH.HeaderText = "Mã MH";
-            this.clMaMH.Name = "clMaMH";
-            // 
-            // clGia
-            // 
-            this.clGia.DataPropertyName = "giamathang";
-            this.clGia.HeaderText = "Giá";
-            this.clGia.Name = "clGia";
-            // 
-            // clSoLuong
-            // 
-            this.clSoLuong.DataPropertyName = "soluong";
-            this.clSoLuong.HeaderText = "Số lượng";
-            this.clSoLuong.Name = "clSoLuong";
-            // 
             // Form_NhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,7 +249,7 @@
             this.Controls.Add(this.label7);
             this.Name = "Form_NhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_NhaCungCap";
+            this.Text = "Nhà cung cấp";
             this.Load += new System.EventHandler(this.Form_NhaCungCap_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

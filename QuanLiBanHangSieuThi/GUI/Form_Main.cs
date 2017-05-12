@@ -70,5 +70,10 @@ namespace GUI
             kh.ShowDialog();
             this.Show();
         }
+
+        private void Form_Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -43,13 +43,13 @@
             this.txtCode = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.clMaMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clTenMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clLoaiHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -196,16 +196,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(762, 150);
             this.dataGridView1.TabIndex = 6;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(710, 174);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // clMaMH
             // 
             this.clMaMH.DataPropertyName = "mamathang";
@@ -242,6 +232,16 @@
             this.clNCC.HeaderText = "Mã NCC";
             this.clNCC.Name = "clNCC";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(710, 174);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Thêm";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form_MatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,7 +253,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_MatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_MatHang";
+            this.Text = "Mặt hàng";
             this.Load += new System.EventHandler(this.Form_MatHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -43,6 +43,13 @@
             this.txtPeopleId = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.clMaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clCmtnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
@@ -53,13 +60,6 @@
             this.txtTel = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.clMaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clCmtnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -209,6 +209,50 @@
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
+            // clMaKH
+            // 
+            this.clMaKH.DataPropertyName = "makhachhang";
+            this.clMaKH.HeaderText = "Mã";
+            this.clMaKH.Name = "clMaKH";
+            // 
+            // clTen
+            // 
+            this.clTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clTen.DataPropertyName = "tenkhachhang";
+            this.clTen.HeaderText = "Tên khách hàng";
+            this.clTen.Name = "clTen";
+            // 
+            // clNgaySinh
+            // 
+            this.clNgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clNgaySinh.DataPropertyName = "ngaysinh";
+            this.clNgaySinh.HeaderText = "Ngày sinh";
+            this.clNgaySinh.Name = "clNgaySinh";
+            // 
+            // clGioiTinh
+            // 
+            this.clGioiTinh.DataPropertyName = "gioitinh";
+            this.clGioiTinh.HeaderText = "Giới tính";
+            this.clGioiTinh.Name = "clGioiTinh";
+            // 
+            // clCmtnd
+            // 
+            this.clCmtnd.DataPropertyName = "cmtnd";
+            this.clCmtnd.HeaderText = "Cmtnd";
+            this.clCmtnd.Name = "clCmtnd";
+            // 
+            // clDiaChi
+            // 
+            this.clDiaChi.DataPropertyName = "diachi";
+            this.clDiaChi.HeaderText = "Địa chỉ";
+            this.clDiaChi.Name = "clDiaChi";
+            // 
+            // clSDT
+            // 
+            this.clSDT.DataPropertyName = "sdt";
+            this.clSDT.HeaderText = "SDT";
+            this.clSDT.Name = "clSDT";
+            // 
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(598, 206);
@@ -319,50 +363,6 @@
             this.label11.TabIndex = 76;
             this.label11.Text = "Danh sách khách hàng";
             // 
-            // clMaKH
-            // 
-            this.clMaKH.DataPropertyName = "makhachhang";
-            this.clMaKH.HeaderText = "Mã";
-            this.clMaKH.Name = "clMaKH";
-            // 
-            // clTen
-            // 
-            this.clTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clTen.DataPropertyName = "tenkhachhang";
-            this.clTen.HeaderText = "Tên khách hàng";
-            this.clTen.Name = "clTen";
-            // 
-            // clNgaySinh
-            // 
-            this.clNgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clNgaySinh.DataPropertyName = "ngaysinh";
-            this.clNgaySinh.HeaderText = "Ngày sinh";
-            this.clNgaySinh.Name = "clNgaySinh";
-            // 
-            // clGioiTinh
-            // 
-            this.clGioiTinh.DataPropertyName = "gioitinh";
-            this.clGioiTinh.HeaderText = "Giới tính";
-            this.clGioiTinh.Name = "clGioiTinh";
-            // 
-            // clCmtnd
-            // 
-            this.clCmtnd.DataPropertyName = "cmtnd";
-            this.clCmtnd.HeaderText = "Cmtnd";
-            this.clCmtnd.Name = "clCmtnd";
-            // 
-            // clDiaChi
-            // 
-            this.clDiaChi.DataPropertyName = "diachi";
-            this.clDiaChi.HeaderText = "Địa chỉ";
-            this.clDiaChi.Name = "clDiaChi";
-            // 
-            // clSDT
-            // 
-            this.clSDT.DataPropertyName = "sdt";
-            this.clSDT.HeaderText = "SDT";
-            this.clSDT.Name = "clSDT";
-            // 
             // Form_KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,7 +377,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form_KhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_KhachHang";
+            this.Text = "Khách hàng";
             this.Load += new System.EventHandler(this.Form_KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

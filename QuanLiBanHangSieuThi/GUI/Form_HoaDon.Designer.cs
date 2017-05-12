@@ -304,7 +304,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_HoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_HoaDon";
+            this.Text = "Hóa đơn";
             this.Load += new System.EventHandler(this.Form_HoaDon_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
