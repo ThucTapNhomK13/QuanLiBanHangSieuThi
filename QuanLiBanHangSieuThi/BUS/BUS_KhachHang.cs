@@ -56,6 +56,33 @@ namespace BUS
             return true;
         }
 
+        public DataTable DTTimKiemKH (string tukhoa)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                string str = "tenkhachhang = N'" +'%'+ tukhoa +'%'+ "'";
+                connector.openConnection();
+                connector.searchData("KhachHang", str);
+                connector.closeConnection();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            return dt;
+        }
+
+        public List<KhachHang> DSTimKiemKH (string tukhoa)
+        {
+            List<KhachHang> ls = new List<KhachHang>();
+            DataTable dt = DTTimKiemKH(tukhoa);
+            foreach(DataRow row in dt.Rows)
+            {
+                ls.Add(new KhachHang(row));
+            }
+            return ls;
+        }
         public bool SuaKh(List<string> kh , string codeId)
         {
             try
