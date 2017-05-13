@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 using BUS;
 using DTO_Model;
-using System.Data;
+using System.Data.SqlClient;
 
 
 namespace GUI

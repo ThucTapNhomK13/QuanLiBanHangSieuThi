@@ -293,6 +293,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form_TImKiem_KhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_TImKiem_KhachHang";
             this.Load += new System.EventHandler(this.Form_TImKiem_KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

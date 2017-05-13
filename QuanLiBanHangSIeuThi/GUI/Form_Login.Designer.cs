@@ -75,7 +75,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 30);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -86,7 +86,7 @@
             this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(197, 25);
-            this.txtUser.TabIndex = 2;
+            this.txtUser.TabIndex = 0;
             // 
             // txtPassWords
             // 
@@ -95,7 +95,7 @@
             this.txtPassWords.Name = "txtPassWords";
             this.txtPassWords.PasswordChar = '*';
             this.txtPassWords.Size = new System.Drawing.Size(197, 25);
-            this.txtPassWords.TabIndex = 2;
+            this.txtPassWords.TabIndex = 1;
             // 
             // button2
             // 
@@ -103,7 +103,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 30);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -114,7 +114,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(282, 250);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(108, 17);
-            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Quên mật khẩu";
             // 
@@ -134,6 +134,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Login";
             this.Load += new System.EventHandler(this.Form_Login_Load);
             this.ResumeLayout(false);

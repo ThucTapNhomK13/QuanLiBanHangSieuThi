@@ -47,8 +47,8 @@ namespace GUI
             nv.Add(Convert.ToDateTime(txtDateOfBird.Text).ToString("MM/dd/yyyy"));
             nv.Add(txtMeasure.Text);
             nv.Add(txtPosition.Text);
-            nv.Add(txtLocation.Text);
             nv.Add(txtTel.Text);
+            nv.Add("GH01");
             return nv;
         }
 
