@@ -44,11 +44,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.clMa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clMaMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -156,12 +151,6 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clMa,
-            this.clTenNCC,
-            this.clMaMH,
-            this.clGia,
-            this.clSoLuong});
             this.dataGridView1.Location = new System.Drawing.Point(26, 217);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(702, 150);
@@ -206,36 +195,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // clMa
-            // 
-            this.clMa.DataPropertyName = "manhacc";
-            this.clMa.HeaderText = "Ma NCC";
-            this.clMa.Name = "clMa";
-            // 
-            // clTenNCC
-            // 
-            this.clTenNCC.DataPropertyName = "tennhacc";
-            this.clTenNCC.HeaderText = "Tên NCC";
-            this.clTenNCC.Name = "clTenNCC";
-            // 
-            // clMaMH
-            // 
-            this.clMaMH.DataPropertyName = "mathangma";
-            this.clMaMH.HeaderText = "Mã MH";
-            this.clMaMH.Name = "clMaMH";
-            // 
-            // clGia
-            // 
-            this.clGia.DataPropertyName = "giamathang";
-            this.clGia.HeaderText = "Giá";
-            this.clGia.Name = "clGia";
-            // 
-            // clSoLuong
-            // 
-            this.clSoLuong.DataPropertyName = "soluong";
-            this.clSoLuong.HeaderText = "Số lượng";
-            this.clSoLuong.Name = "clSoLuong";
-            // 
             // Form_NhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,7 +207,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label7);
             this.Name = "Form_NhaCungCap";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_NhaCungCap";
             this.Load += new System.EventHandler(this.Form_NhaCungCap_Load);
             this.groupBox1.ResumeLayout(false);
@@ -277,10 +235,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clMa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clTenNCC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clMaMH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clSoLuong;
     }
 }

@@ -48,6 +48,7 @@ namespace BUS
             }
             catch (Exception)
             {
+
                 throw;
             }
             return true;
@@ -75,8 +76,8 @@ namespace BUS
             {
                 string query = "hoten = N'" + nv[1].ToString() + "' , quequan = N'" + nv[2].ToString() + "' , diachi = N'" + nv[3].ToString() +
                     "' , gioitinh = N'" + nv[4].ToString() + "' , tongiao = N'" + nv[5].ToString() + "' , cmtnd = '" + nv[6].ToString() + 
-                    "' , ngaysinh = '" + nv[7].ToString() + "' , luong = '" + nv[8].ToString() + "' , chucvu = N'" + nv[9].ToString() +
-                    "' , sdt = '" + nv[11].ToString() + "' , gianhangma = '" + nv[10].ToString() + "'";
+                    "' , ngaysinh = '" + nv[7].ToString() + "' , luong = '" + nv[8].ToString() + "' , chucvu = N'" + nv[9].ToString() + 
+                    "' , gianhangma = '" + nv[10].ToString() + "' , sdt = '" + nv[11].ToString() + "'";
                 connector.openConnection();
                 connector.ModifyData("NhanVien", query, "manhanvien = '" + codeId + "'");
                 connector.closeConnection();

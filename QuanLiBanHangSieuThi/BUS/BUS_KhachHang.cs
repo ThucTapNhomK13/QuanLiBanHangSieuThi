@@ -60,10 +60,10 @@ namespace BUS
         {
             try
             {
-                string str = "tenkhachhang = N'" + kh[1].ToString() + "' , ngaysinh = '" + kh[2].ToString() + "' , gioitinh = N'" + kh[3].ToString() + 
-                    "' , cmtnd = '" + kh[4].ToString() + "' , diachi = N'" + kh[5].ToString() + "' , sdt = '" + kh[6].ToString() + "' ";
+                string str = "hoten = N'" + kh[1].ToString() + "' , ngaysinh = '" + kh[2].ToString() + "' , sdt = '" + kh[3].ToString() +
+                    "' , maphong = '" + kh[4].ToString() + "' , ngaydangki = '" + kh[5].ToString() + "' , ngaytra = '" + kh[6].ToString() + "' ";
                 connector.openConnection();
-                connector.ModifyData("KhachHang", str, " makhachhang = '" + codeId + "'");
+                connector.ModifyData("KhachHang", str, " socmnd = '" + codeId + "'");
                 connector.closeConnection();
             }
             catch (Exception)
@@ -78,7 +78,7 @@ namespace BUS
             try
             {
                 connector.openConnection();
-                connector.DeleteData("KhachHang", " makhachhang = '" + codeId + "'");
+                connector.DeleteData("KhachHang", " socmnd = '" + codeId + "'");
                 connector.closeConnection();
             }
             catch (Exception)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_Model
 {
-    class NhaCungCap
+    public class NhaCungCap
     {
         public string manhacc { get; set; }
         public string tennhacc { get; set; }

@@ -19,42 +19,32 @@ namespace GUI
 
         private void đăngNhậpToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form_Login lg = new Form_Login();
-            lg.ShowDialog();
-            this.Show();
+            lg.Show();
         }
 
         private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form_NhanVien nv = new Form_NhanVien();
-            nv.ShowDialog();
-            this.Show();
+            nv.Show();
         }
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form_KhachHang kh = new Form_KhachHang();
-            kh.ShowDialog();
-            this.Show();
+            kh.Show();
         }
 
         private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form_NhaCungCap ncc = new Form_NhaCungCap();
-            ncc.ShowDialog();
-            this.Show();
+            ncc.Show();
         }
 
         private void hàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form_MatHang mh = new Form_MatHang();
-            mh.ShowDialog();
-            this.Show();
+            mh.Show();
         }
 
         private void tìmKiếmNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,22 +55,8 @@ namespace GUI
 
         private void tìmKiếmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form_TImKiem_KhachHang kh = new Form_TImKiem_KhachHang();
-            kh.ShowDialog();
-            this.Show();
-        }
-
-        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHelp help = new frmHelp();
-            this.Hide();
-            help.Show();
+            kh.Show();
         }
     }
 }

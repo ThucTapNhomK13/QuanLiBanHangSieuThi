@@ -47,8 +47,8 @@ namespace GUI
             nv.Add(Convert.ToDateTime(txtDateOfBird.Text).ToString("MM/dd/yyyy"));
             nv.Add(txtMeasure.Text);
             nv.Add(txtPosition.Text);
+            nv.Add(txtLocation.Text);
             nv.Add(txtTel.Text);
-            nv.Add("GH01");
             return nv;
         }
 
@@ -109,7 +109,7 @@ namespace GUI
         private void dataGridView_Click(object sender, EventArgs e)
         {
             int index = dataGridView.CurrentRow.Index;      
-            txtCode.Text = dataGridView.Rows[index].Cells[0].Value.ToString();
+            txtCode.Text = dataGridView.Rows[index].Cells["manhanvien"].Value.ToString();
             txtName.Text = dataGridView.Rows[index].Cells[1].Value.ToString();
             txtCountry.Text = dataGridView.Rows[index].Cells[2].Value.ToString();
             txtAddress.Text = dataGridView.Rows[index].Cells[3].Value.ToString();

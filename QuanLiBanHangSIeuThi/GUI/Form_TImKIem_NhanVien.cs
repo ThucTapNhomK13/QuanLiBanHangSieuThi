@@ -100,11 +100,10 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             CloseTextBox();
-            bool check = false;
-            int index = 0;
+            List<NhanVien> stafflist = new List<NhanVien>();
+            NhanVien staff = null;
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
-                //txtCode.Text == "" || 
                 if (txtCode.Text == dataGridView1.Rows[i].Cells[0].Value.ToString())
                     if (txtName.Text == "" || txtName.Text == dataGridView1.Rows[i].Cells[1].Value.ToString())
                         if (txtCountry.Text == "" || txtCountry.Text == dataGridView1.Rows[i].Cells[2].Value.ToString())
@@ -117,38 +116,44 @@ namespace GUI
                                             if (txtPosition.Text == "" || txtPosition.Text == dataGridView1.Rows[i].Cells[9].Value.ToString())
                                                 if (txtLocation.Text == "" || txtLocation.Text == dataGridView1.Rows[i].Cells[10].Value.ToString())
                                                     if (txtTel.Text == "" || txtTel.Text == dataGridView1.Rows[i].Cells[11].Value.ToString())
-                                                        if (rdbMale.Checked == true || rdbFeMale.Checked == true)
+                                                        if (rdbMale.Checked == true && "Nam" == dataGridView1.Rows[i].Cells[4].Value.ToString())
                                                         {
-                                                            if (rdbMale.Checked == true)
-                                                            {
-                                                                if ("Nam" == dataGridView1.Rows[i].Cells[4].Value.ToString())
-                                                                {
-                                                                    check = true;
-                                                                    index = i;
-                                                                }
-                                                            }
-                                                            else
-                                                            {
-                                                                if ("Nữ" == dataGridView1.Rows[i].Cells[4].Value.ToString())
-                                                                {
-                                                                    check = true;
-                                                                    index = i;
-                                                                    break;
-                                                                }
-                                                            }
-
+                                                            staff = new NhanVien(dataGridView1.Rows[i].Cells[0].Value.ToString(), dataGridView1.Rows[i].Cells[1].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[2].Value.ToString(), dataGridView1.Rows[i].Cells[3].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[4].Value.ToString(), dataGridView1.Rows[i].Cells[5].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[6].Value.ToString(), Convert.ToDateTime(dataGridView1.Rows[i].Cells[7].Value.ToString())
+                                                , dataGridView1.Rows[i].Cells[8].Value.ToString(), dataGridView1.Rows[i].Cells[9].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[10].Value.ToString(), dataGridView1.Rows[i].Cells[11].Value.ToString());
+                                                            stafflist.Add(staff);
                                                         }
-                                                        else
+                                                        else if (rdbFeMale.Checked == true && "Nữ" == dataGridView1.Rows[i].Cells[4].Value.ToString())
                                                         {
-                                                            check = true;
-                                                            index = i;
-                                                            break;
+                                                            staff = new NhanVien(dataGridView1.Rows[i].Cells[0].Value.ToString(), dataGridView1.Rows[i].Cells[1].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[2].Value.ToString(), dataGridView1.Rows[i].Cells[3].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[4].Value.ToString(), dataGridView1.Rows[i].Cells[5].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[6].Value.ToString(), Convert.ToDateTime(dataGridView1.Rows[i].Cells[7].Value.ToString())
+                                                , dataGridView1.Rows[i].Cells[8].Value.ToString(), dataGridView1.Rows[i].Cells[9].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[10].Value.ToString(), dataGridView1.Rows[i].Cells[11].Value.ToString());
+                                                            stafflist.Add(staff);
+                                                        }
+                                                        else if(rdbFeMale.Checked == false && rdbMale.Checked == false)
+                                                        {
+                                                            staff = new NhanVien(dataGridView1.Rows[i].Cells[0].Value.ToString(), dataGridView1.Rows[i].Cells[1].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[2].Value.ToString(), dataGridView1.Rows[i].Cells[3].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[4].Value.ToString(), dataGridView1.Rows[i].Cells[5].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[6].Value.ToString(), Convert.ToDateTime(dataGridView1.Rows[i].Cells[7].Value.ToString())
+                                                , dataGridView1.Rows[i].Cells[8].Value.ToString(), dataGridView1.Rows[i].Cells[9].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[10].Value.ToString(), dataGridView1.Rows[i].Cells[11].Value.ToString());
+                                                            stafflist.Add(staff);
                                                         }
             }
-            if (check)
-                ShowData(index);
-            else
+            if (dataGridView1.DataSource == null)
                 MessageBox.Show("Không tìm thấy dữ liệu phù hợp ", "Thống báo ", MessageBoxButtons.OK);
+            else
+            {
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = stafflist;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

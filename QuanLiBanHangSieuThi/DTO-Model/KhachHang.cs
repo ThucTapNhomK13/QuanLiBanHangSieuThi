@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_Model
 {
-    class KhachHang
+    public class KhachHang
     {
         public string makhachhang { get; set; }
         public string tenkhachhang { get; set; }
@@ -15,5 +15,15 @@ namespace DTO_Model
         public string cmtnd { get; set; }
         public string diachi { get; set; }
         public string sdt { get; set; }
+        public KhachHang (string makhachhang , string tenkhachhang , DateTime ngaysinh , string gioitinh , string cmtnd , string diachi , string sdt)
+        {
+            this.makhachhang = makhachhang;
+            this.tenkhachhang = tenkhachhang;
+            this.ngaysinh = ngaysinh;
+            this.gioitinh = gioitinh;
+            this.cmtnd = cmtnd;
+            this.diachi = diachi;
+            this.sdt = sdt;
+        }
     }
 }

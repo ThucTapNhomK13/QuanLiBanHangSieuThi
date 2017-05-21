@@ -52,6 +52,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.rdbDefault = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +104,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dtpDateOfBird);
+            this.groupBox1.Controls.Add(this.rdbDefault);
             this.groupBox1.Controls.Add(this.rdbFeMale);
             this.groupBox1.Controls.Add(this.rdbMale);
             this.groupBox1.Controls.Add(this.label3);
@@ -135,7 +137,7 @@
             // rdbFeMale
             // 
             this.rdbFeMale.AutoSize = true;
-            this.rdbFeMale.Location = new System.Drawing.Point(505, 57);
+            this.rdbFeMale.Location = new System.Drawing.Point(483, 57);
             this.rdbFeMale.Name = "rdbFeMale";
             this.rdbFeMale.Size = new System.Drawing.Size(39, 17);
             this.rdbFeMale.TabIndex = 65;
@@ -279,6 +281,17 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // rdbDefault
+            // 
+            this.rdbDefault.AutoSize = true;
+            this.rdbDefault.Location = new System.Drawing.Point(528, 57);
+            this.rdbDefault.Name = "rdbDefault";
+            this.rdbDefault.Size = new System.Drawing.Size(100, 17);
+            this.rdbDefault.TabIndex = 65;
+            this.rdbDefault.TabStop = true;
+            this.rdbDefault.Text = "Không xác định";
+            this.rdbDefault.UseVisualStyleBackColor = true;
+            // 
             // Form_TImKiem_KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,7 +306,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form_TImKiem_KhachHang";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_TImKiem_KhachHang";
             this.Load += new System.EventHandler(this.Form_TImKiem_KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -330,5 +342,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RadioButton rdbDefault;
     }
 }

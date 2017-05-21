@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 using BUS;
 using DTO_Model;
-using System.Data.SqlClient;
+using System.Data;
 
 
 namespace GUI
@@ -74,58 +74,71 @@ namespace GUI
             txtTel.Text = dataGridView1.Rows[rows].Cells[6].Value.ToString();
         }
 
-        private void Form_TImKiem_KhachHang_Load(object sender, EventArgs e)
+        public void LoadData()
         {
+            dskh = new BUS_KhachHang();
             DataTable tbl = dskh.DSKhachHang();
             dataGridView1.DataSource = tbl;
-            CloseTextBox();
+            OpenTextBox();
+        }
+        private void Form_TImKiem_KhachHang_Load(object sender, EventArgs e)
+        {
+            LoadData();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CloseTextBox();
-            bool check = false;
-            int index = 0;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            LoadData();
+            OpenTextBox();
+            List<KhachHang> classroomsearch = new List<KhachHang>();
+            KhachHang customer = null;
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
-                if (txtCodeId.Text == dataGridView1.Rows[i].Cells[0].Value.ToString())
-                    if (txtName.Text == dataGridView1.Rows[i].Cells[1].Value.ToString())
-                        //if (dtpDateOfBird.Text == dataGridView1.Rows[i].Cells[2].Value.ToString())
-                        if (txtPeopleId.Text == dataGridView1.Rows[i].Cells[4].Value.ToString())
-                            if (txtAddress.Text == dataGridView1.Rows[i].Cells[5].Value.ToString())
-                                if (txtTel.Text == dataGridView1.Rows[i].Cells[6].Value.ToString())
-                                    if (rdbMale.Checked == true || rdbFeMale.Checked == true)
+                if (txtCodeId.Text == dataGridView1.Rows[i].Cells[0].Value.ToString() || txtCodeId.Text == "" )
+                    if (txtName.Text == dataGridView1.Rows[i].Cells[1].Value.ToString() || txtName.Text == "" || dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(txtName.Text) == true)
+                        if (dtpDateOfBird.Text == dataGridView1.Rows[i].Cells[2].Value.ToString())
+                            if (txtPeopleId.Text == dataGridView1.Rows[i].Cells[4].Value.ToString() || txtPeopleId.Text == "" || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(txtPeopleId.Text) == true)
+                                if (txtAddress.Text == dataGridView1.Rows[i].Cells[5].Value.ToString() || txtAddress.Text == "" || dataGridView1.Rows[i].Cells[5].Value.ToString().Contains(txtAddress.Text) == true)
+                                    if (txtTel.Text == dataGridView1.Rows[i].Cells[6].Value.ToString() || txtTel.Text == "" || dataGridView1.Rows[i].Cells[6].Value.ToString().Contains(txtTel.Text) == true)
                                     {
-                                        if (rdbMale.Checked == true)
+                                        if (rdbMale.Checked == true && "Nam" == dataGridView1.Rows[i].Cells[3].Value.ToString())
                                         {
-                                            if ("Nam" == dataGridView1.Rows[i].Cells[4].Value.ToString())
-                                            {
-                                                check = true;
-                                                index = i;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            if ("Nữ" == dataGridView1.Rows[i].Cells[4].Value.ToString())
-                                            {
-                                                check = true;
-                                                index = i;
-                                                break;
-                                            }
-                                        }
+                                            customer = new KhachHang(dataGridView1.Rows[i].Cells[0].Value.ToString(), dataGridView1.Rows[i].Cells[1].Value.ToString()
+                                                , DateTime.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()), dataGridView1.Rows[i].Cells[3].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[4].Value.ToString(), dataGridView1.Rows[i].Cells[5].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[6].Value.ToString());
+                                            classroomsearch.Add(customer);
 
+                                        }
+                                        else if (rdbFeMale.Checked == true && "Nữ" == dataGridView1.Rows[i].Cells[3].Value.ToString())
+                                        {
+                                            customer = new KhachHang(dataGridView1.Rows[i].Cells[0].Value.ToString(), dataGridView1.Rows[i].Cells[1].Value.ToString()
+                                                , DateTime.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()), dataGridView1.Rows[i].Cells[3].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[4].Value.ToString(), dataGridView1.Rows[i].Cells[5].Value.ToString()
+                                                , dataGridView1.Rows[i].Cells[6].Value.ToString());
+                                            classroomsearch.Add(customer);
+
+                                        }
+                                        else if (rdbDefault.Checked == true)
+
+                                        {
+                                            customer = new KhachHang(dataGridView1.Rows[i].Cells[0].Value.ToString(), dataGridView1.Rows[i].Cells[1].Value.ToString()
+                                                        , DateTime.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()), dataGridView1.Rows[i].Cells[3].Value.ToString()
+                                                        , dataGridView1.Rows[i].Cells[4].Value.ToString(), dataGridView1.Rows[i].Cells[5].Value.ToString()
+                                                        , dataGridView1.Rows[i].Cells[6].Value.ToString());
+                                            classroomsearch.Add(customer);
+                                        }
                                     }
-                                    else
-                                    {
-                                        check = true;
-                                        index = i;
-                                        break;
-                                    }
+
             }
-            if (check)
-                ShowData(index);
-            else
+            if (dataGridView1.DataSource == null)
                 MessageBox.Show("Không tìm thấy dữ liệu phù hợp ", "Thống báo ", MessageBoxButtons.OK);
+            else
+            {
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = classroomsearch;
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)

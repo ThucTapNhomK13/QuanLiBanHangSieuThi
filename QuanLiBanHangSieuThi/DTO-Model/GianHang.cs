@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_Model
 {
-    class GianHang
+    public class GianHang
     {
         public string magianhang { get; set; }
         public string tengianhang { get; set; }
